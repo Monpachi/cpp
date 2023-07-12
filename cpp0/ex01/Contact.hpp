@@ -1,12 +1,25 @@
-#include <iostream>
+#ifndef CONTACT_HPP
+# define CONTACT_HPP
+
+# include <iostream>
+
+extern std::string g_err;
 
 class Contact
 {
     public:
-		std::string get_First_name() {return First_name;}
-		void set_First_name(std::string name) {First_name = name;}
+		std::string get_First_name();
+		std::string get_Last_name();
+		std::string get_Nickname();
+		void set_First_name(std::string name);
+		void set_Last_name(std::string name);
+		void set_Nickname(std::string nickname);
+		void set_Phone(std::string phone);
+		void set_Dark(std::string dark);
+		void set_Relation(std::string relation);
+		void set_Age(std::string age);
 		void show();
-		Contact();
+		// Contact();
 
     private:
         std::string First_name;
@@ -15,23 +28,7 @@ class Contact
 		std::string Phone_number;
 		std::string Darkest_secret;
 		std::string Relationship_status;
-		unsigned int Age;
+		std::string Age;
 };
 
-Contact::Contact() {
-	this->First_name = "Seth";
-	this->Last_name = "Chan";
-	this->Nickname = "El Tombeur";
-	this->Phone_number = "0123456789";
-	this->Darkest_secret = "Like to give candies to kids";
-	this->Relationship_status = "Still Single, interested?";
-}
-
-void Contact::show() {
-	std::cout << this->First_name << std::endl;
-	std::cout << this->Last_name << std::endl;
-	std::cout << this->Nickname << std::endl;
-	std::cout << this->Phone_number << std::endl;
-	std::cout << this->Darkest_secret << std::endl;
-	std::cout << this->Relationship_status << std::endl;
-}
+#endif

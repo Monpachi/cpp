@@ -1,8 +1,9 @@
-NAME = Phonebook
+NAME = Attack
 
-SRCS =	PhoneBook.cpp\
-		Contact.cpp\
-		main.cpp
+SRCS =	HumanA.cpp\
+		HumanB.cpp\
+		main.cpp\
+		weapon.cpp
 
 
 OBJS = $(SRCS:.cpp=.o)

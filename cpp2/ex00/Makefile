@@ -1,9 +1,7 @@
-NAME = Phonebook
+NAME = first_canon
 
-SRCS =	PhoneBook.cpp\
-		Contact.cpp\
-		main.cpp
-
+SRCS = 	main.cpp\
+		Fixed.cpp
 
 OBJS = $(SRCS:.cpp=.o)
 
