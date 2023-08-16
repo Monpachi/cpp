@@ -12,6 +12,7 @@ Cat::Cat(const Cat & src) : Animal(src) {
 }
 
 Cat::~Cat() {
+	delete(_brain);
 	std::cout << YELLOW "Destructor void Cat Called" NC << std::endl;
 }
 

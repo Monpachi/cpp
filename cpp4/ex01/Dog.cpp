@@ -12,6 +12,7 @@ Dog::Dog(const Dog & src) : Animal(src) {
 }
 
 Dog::~Dog() {
+	delete(_brain);
 	std::cout << BLUE "Destructor void Dog Called" NC << std::endl;
 }
 
