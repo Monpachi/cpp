@@ -27,6 +27,7 @@ class Form {
 			virtual const char *what() const throw();
 		};
 
+
 	private :
 		std::string const 	_name;
 		int					_gradeToSign;
